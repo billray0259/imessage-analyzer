@@ -2,4 +2,5 @@ venv/
 min-env/
 archive/
 __pycache__/
+prompt/
 .env
