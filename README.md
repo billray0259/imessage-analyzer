@@ -15,6 +15,7 @@ Our project uses Python, a powerful programming language, and Visual Studio Code
   - [Setting up VSCode](#setting-up-vscode)
   - [Clone the Repository](#clone-the-repository)
   - [Set up Virtual Environment and Install Dependencies](#set-up-virtual-environment-and-install-dependencies)
+  - [Grant Full Disk Access to Visual Studio Code on macOS](#grant-full-disk-access-to-visual-studio-code-on-macos)
   - [Running the Code](#running-the-code)
 
 ## Check Python Installation
@@ -65,6 +66,27 @@ To isolate our project and its dependencies, we will create a virtual environmen
 5. Once the virtual environment is activated, install the necessary packages by running `pip install -r requirements.txt`.
 
 You have now set up your virtual environment and installed all required Python packages.
+
+## Grant Full Disk Access to Visual Studio Code on macOS
+
+To grant "read all files on disk" permission to Visual Studio Code, you need to provide VSCode with Full Disk Access on your Mac. Please follow the steps below:
+
+1. Open `System Preferences` on your Mac.
+2. Click on `Security & Privacy`.
+3. Switch to the `Privacy` tab.
+4. Scroll down the list on the left and click on `Full Disk Access`.
+5. You will see a list of applications that have requested full disk access. 
+6. If your settings are locked, click the lock at the bottom left to unlock them. You'll need to enter your admin password.
+7. Now, click on the `+` sign to add an application to the list.
+8. In the file chooser that pops up, press `Cmd+Shift+G` to open the "Go to the folder" dialog.
+9. Enter the following path to access VSCode: `/Applications/Visual Studio Code.app` and click `Go`.
+10. Visual Studio Code should now appear in the file chooser. Click `Open` to add it to the list of applications with Full Disk Access.
+11. Ensure that the checkbox next to `Visual Studio Code` in the list is checked.
+12. If you previously unlocked the settings, remember to click the lock again to prevent further changes.
+
+VSCode now has Full Disk Access. You might need to restart VSCode for these changes to take effect. If you're still experiencing issues, try restarting your Mac.
+
+Remember to be cautious when giving applications Full Disk Access, as they'll have access to all data on your disk. Only grant this access to trusted applications like Visual Studio Code.
 
 ## Running the Code
 
